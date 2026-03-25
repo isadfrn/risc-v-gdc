@@ -27,7 +27,8 @@ menor:
 	sub a1, a1, a0          # Faz a1 - a0 e salva no a1
 	j loop                  # Volta para o começo do loop
 
-# No Linux, o registrador a7 é usado para indicar o número da chamada de sistema que se deseja usar
-# Aqui o valor 1 corresponde à chamada de sistema SYS_exit, para encerrar esse programa
+# No RARS, o registrador a7 é usado para indicar o número da chamada de sistema desejada
+# O valor 10 corresponde à chamada de sistema exit, para encerrar o programa
 fim:
-	li a7, 1               # Define a7 = 1 para indicar fim do programa
+	li a7, 10              # Define a7 = 10 para encerrar o programa
+	ecall
