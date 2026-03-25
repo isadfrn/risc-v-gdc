@@ -46,4 +46,3 @@ fim:
 	ecall              # Chama o sistema operacional para imprimir a0
 	li a7, 10          # Define a7 = 10 para indicar fim do programa
 	ecall
-	
