@@ -6,12 +6,12 @@
 
 ## About
 
-This repository contains two RISC-V Assembly implementations of the **Greatest Common Divisor (GCD)** algorithm — known in Portuguese as **MDC (Máximo Divisor Comum)** — using the subtractive Euclidean method. Both solutions were developed for a Computer Architecture class taken during a Master's Degree, and are meant to run on the [RARS - RISC-V Assembler and Runtime Simulator](https://github.com/TheThirdOne/rars).
+This repository contains two RISC-V Assembly implementations of the **Greatest Common Divisor (GCD)** algorithm - known in Portuguese as **MDC (Máximo Divisor Comum)** - using the subtractive Euclidean method. Both solutions were developed for a Computer Architecture class taken during a Master's Degree, and are meant to run on the [RARS - RISC-V Assembler and Runtime Simulator](https://github.com/TheThirdOne/rars).
 
-| Solution | Description |
-|----------|-------------|
-| [`solucao1/`](./solucao1/) | Fixed inputs (`x = 12`, `y = 18`); result stays in register `a0` |
-| [`solucao2/`](./solucao2/) | Interactive; reads two integers from stdin and prints the GCD |
+| Solution           | Description                                                      |
+| ------------------ | ---------------------------------------------------------------- |
+| [`sol1/`](./sol1/) | Fixed inputs (`x = 12`, `y = 18`); result stays in register `a0` |
+| [`sol2/`](./sol2/) | Interactive; reads two integers from stdin and prints the GCD    |
 
 Each folder contains the `.asm` (RISC-V Assembly) file and the equivalent `.c` (C reference) file.
 
